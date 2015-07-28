@@ -1,0 +1,76 @@
+    <head>
+        <script src="lib/js/jquery-1.11.1.min.js"></script>
+        <script src="lib/js/jplayer/jplayer.js" ></script>
+        <script src="lib/js/jplayer/javascript/add-on/jplayer.playlist.js" ></script>
+        <script src="lib/js/angular.min.js"></script>
+        <script src="lib/js/App/band.js"></script>
+
+        <link type='txt/css' href='media/css/band/jplayer/jplayer.css' rel='stylesheet'></link>
+
+    </head>
+    <body>
+        <div ng-app='tutorial'>
+            <div ng-controller='PlaylistCtrl'>
+                <div id="jp_container_N" class="jp-audio" role="application">
+                    <div class="jp-type-playlist">
+                        <div id="jquery_jplayer_N" class="jp-jplayer.audio"></div>
+                        <div class="jp-gui">
+                            <div class="jp-interface">
+                                <div class="jp-progress">
+                                    <div class="jp-seek-bar">
+                                        <div class="jp-play-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                                <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                                <div class="jp-controls-holder">
+                                    <div class="jp-controls">
+                                        <button class="jp-previous" role="button" tabindex="0">previous</button>
+                                        <button class="jp-play" role="button" tabindex="0">play</button>
+                                        <button class="jp-next" role="button" tabindex="0">next</button>
+                                        <button class="jp-stop" role="button" tabindex="0">stop</button>
+                                    </div>
+                                    <div class="jp-volume-controls">
+                                        <button class="jp-mute" role="button" tabindex="0">mute</button>
+                                        <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value"></div>
+                                        </div>
+                                    </div>
+                                    <div class="jp-toggles">
+                                        <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                                        <button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+                                        <button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+                                    </div>
+                                </div>
+                                <div class="jp-details">
+                                    <div class="jp-title" aria-label="title">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jp-album">
+                            <ul id="album">
+                                <li ng-repeat="value in albumList">
+                                        <input type="hidden" ng-model="currentAlbum" ng-value="{{value.rName}}"> </input>
+                                        <a ng-click="changeAlbum(value.trackList)">{{ value.nName }}</a>
+                                    </li>
+                            <ul>
+                        </div>
+                        <div class="jp-playlist">
+                            <ul>
+                                <!-- The method Playlist.displayPlaylist() uses this unordered list -->
+                                <li>&nbsp;</li>
+                            </ul>
+                        </div>
+                        <div class="jp-no-solution">
+                            <span>Update Required</span>
+                            To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                        </div>
+                    </div>
+                </div>
+                {{ currentAlbum }}
+            </div>
+        </div>
+        
+    </body>
+</html>

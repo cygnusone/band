@@ -1,0 +1,49 @@
+{
+    "metroid" : {
+        "nName": "Metroid",
+        "rName": "metroid",
+        "trackList" : [
+            {
+                "title": "Intro",
+                "artist": "Stemage",
+                "mp3": "media/music/stemage/metroid/metroid_intro.mp3"
+            },
+            {
+                "title": "Intro",
+                "artist": "Stemage",
+                "mp3": "media/music/stemage/metroid/metroid_intro.mp3"
+            },
+            {
+                "title": "Intro",
+                "artist": "Stemage",
+                "mp3": "media/music/stemage/metroid/metroid_intro.mp3"
+            },
+            {
+                "title": "Intro 2",
+                "artist": "Stemage",
+                "mp3": "media/music/stemage/metroid/metroid_intro.mp3"
+            }
+        ]
+    },
+    "super_metroid" : {
+        "nName": "Super Metroid",
+        "rName": "super_metroid",
+        "trackList" : [
+            {
+                "title": "Intro",
+                "artist": "Stemage",
+                "mp3": "media/music/stemage/metroid/metroid_intro.mp3"
+            },
+            {
+                "title": "Intro",
+                "artist": "Stemage",
+                "mp3": "media/music/stemage/metroid/metroid_intro.mp3"
+            },
+            {
+                "title": "_testIntro",
+                "artist": "Stemage",
+                "mp3": "media/music/stemage/metroid/metroid_intro.mp3"
+            }
+        ]
+    }
+}
